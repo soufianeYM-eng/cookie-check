@@ -1,6 +1,4 @@
-
-<script>
-    var CookieName = "TestCookie";
+var CookieName = "TestCookie";
 document.cookie = "CookieName=TestCookie;SameSite=None;Secure;";
 
 if (document.cookie.indexOf(CookieName) == -1) {
@@ -9,4 +7,3 @@ if (document.cookie.indexOf(CookieName) == -1) {
 else if (document.cookie.indexOf(CookieName) != -1) {
     console.log("Thank you for enabling Third-Party cookies");
 }
-</script>
