@@ -7,8 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        document.cookie="thirdparty=yes; Max-Age=3600; SameSite=Lax";
-    </script>
+    <?php
+        setcookie('thirdparty', 'yes', [
+            'expires' => time() + 86400,
+            'path' => '/',
+            'secure' => true,
+            'httponly' => false,
+            'samesite' => 'None',
+        ]);
+    ?>
 </body>
 </html>
