@@ -3,4 +3,4 @@
     header('Content-Type: text/javascript');
 
     setcookie("myCookie", "yes");
-    
+?>
